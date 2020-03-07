@@ -34,7 +34,7 @@ public class Waypoint {
         double dLon = Math.toRadians(longitude - other.longitude);
         double lat1 = Math.toRadians(latitude);
         double lat2 = Math.toRadians(other.latitude);
-        double a = Math.pow(Math.sin(dLat / 2),2) + Math.pow(Math.sin(dLon / 2),2) * Math.cos(lat1) * Math.cos(lat2);
+        double a = Math.pow(Math.sin(dLat / 2), 2) + Math.pow(Math.sin(dLon / 2), 2) * Math.cos(lat1) * Math.cos(lat2);
         double c = 2 * Math.asin(Math.sqrt(a));
         return R * c;
     }
@@ -55,3 +55,4 @@ public class Waypoint {
     public String toString() {
         return "(" + getLatitude() + ", " + getLongitude() + ")";
     }
+}

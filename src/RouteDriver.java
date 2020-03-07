@@ -31,8 +31,16 @@ public class RouteDriver extends JFrame implements MouseListener {
 
     public RouteDriver() throws FileNotFoundException {
         // TODO: instantiate a route object (must use "route" as reference variable)
+        Scanner in = new Scanner(new FileInputStream(ROUTE_DATA_FILE));
+        route = new Route();
+        Waypoint newWay = new Waypoint(200, 200);
+        route.add(newWay);
+        System.out.println(route.toString());
+
 
         // TODO: read the waypoints from the data file and add them into the route
+
+
 
 
         // GUI part of the frame

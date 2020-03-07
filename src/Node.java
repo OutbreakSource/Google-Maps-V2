@@ -7,15 +7,15 @@
 
 public class Node {
 
-    private String data; // aka value"
+    private Waypoint data; // aka value"
     private Node next;
 
     public Node(){
-        data = "" + 0;
+        data = null;
         next = null;
     }
 
-    public Node(String data){
+    public Node(Waypoint data){
         this.data = data;
         next = null;
     }
@@ -24,11 +24,11 @@ public class Node {
         this.next = next;
     }
 
-    public void setData(String data) {
+    public void setData(Waypoint data) {
         this.data = data;
     }
 
-    public String getData() {
+    public Waypoint getData() {
         return data;
     }
 
